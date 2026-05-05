@@ -1,0 +1,21 @@
+InnoPark Konya Teknoloji Geliştirme Bölgesi, Ar-Ge ve yazılım faaliyeti yürütecek girişimciler ile teknolojik üretim yapmak isteyen şirketlere geniş kapsamlı **ofis, atölye ve inşaat alanı** imkanları sunmaktadır.
+
+### Sunulan Fiziksel Alanlar ve Kapasiteler
+InnoPark bünyesinde farklı ihtiyaçlara yönelik çeşitli bloklarda ofis ve atölyeler bulunmaktadır :
+*   **A Blok:** 20, 30, 40 ve 70 m²’lik ofis alanları.
+*   **B Blok:** 30, 40 ve 60 m²’lik alanlar.
+*   **D1 Blok:** 180 m²'lik geniş alan.
+*   **D2 Blok:** 300 m²'lik alan.
+*   **D3 ve D4 Blokları:** Her biri 350 m²'lik büyük ölçekli alanlar.
+
+### Teknolojik Üretim ve Altyapı İmkanları
+Klasik teknoparklardan farklı olarak InnoPark, **"Teknolojik Üretim Odaklı"** bir yapıya sahiptir. Bu kapsamda sunulan imkanlar şöyledir:
+*   **Nitelikli Atölyeler:** Ar-Ge'si yapılan ürünlerin seri üretimine uygun, yüksek irtifalı, **vinç kurmaya elverişli**, içine kamyon ve forklift girebilen atölyeler mevcuttur.
+*   **Güçlü Altyapı:** Konya OSB sınırları içinde yer alması sayesinde işletmelerin ihtiyaçlarını karşılayacak kapasitede **trifaze elektrik şebekesi**, doğalgaz hattı, su, kanalizasyon ve yüksek hızlı internet temini sağlanmaktadır.
+*   **İnşaat Alanı Tahsisi:** Kendi binasını inşa etmek isteyen kuruluşlara kiralama veya yap-işlet-devret yöntemiyle arazi tahsisi yapılabilmektedir.
+
+### Ofis İmkanlarından Yararlanma ve Destekler
+*   **Başvuru ve Kabul:** Girişimciler, projeleriyle `innopark.online` üzerinden başvuru yaparlar; projeler akademisyen ve uzmanlardan oluşan 3 kişilik bir heyet tarafından değerlendirilir.
+*   **Vergi Muafiyetleri:** Bölgede ofis/atölye kiralayan firmalar; **kurumlar/gelir vergisi muafiyeti**, personel gelir vergisi stopajı teşviki ve yazılım satışlarında **KDV istisnası** gibi 4691 ve 5746 sayılı kanun kapsamındaki teşviklerden 31.12.2028 tarihine kadar yararlanabilirler.
+*   **Ödül Olarak Ofis Desteği:** "Girişimci Rampası" veya "Investment for Founders" gibi programlar kapsamında düzenlenen yarışmalarda dereceye giren girişimlere **3, 6 veya 12 aylık ücretsiz ofis desteği** verilmektedir.
+*   **Ek Hizmetler:** Ofis kiralayan firmalar; Teknoloji Transfer Ofisi (TTO) aracılığıyla fikri mülkiyet hakları yönetimi, ticarileştirme, tasarım ve analiz desteği gibi profesyonel hizmetlere de erişebilirler.

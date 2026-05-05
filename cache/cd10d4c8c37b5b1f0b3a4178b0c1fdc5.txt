@@ -1,0 +1,13 @@
+InnoPark Konya Teknoloji Geliştirme Bölgesi, Ar-Ge ve yazılım faaliyeti yürütecek işletmeler ile teknolojik ürünler üretmek isteyen şirketlere kiralama yoluyla nitelikli **ofis, üretim, deney ve depolama alanları** sunmaktadır. Bölge, klasik teknoparklardan farklı olarak "Teknolojik Üretim Odaklı" bir model üzerine kurulmuştur ve yüksek teknoloji ürünlerinin seri üretimine imkan tanımaktadır.
+
+Sunulan ofis ve atölyelerin bloklara göre büyüklükleri şu şekildedir :
+*   **A Blok:** 20, 30, 40 ve 70 m²
+*   **B Blok:** 30, 40 ve 60 m²
+*   **D Blokları:** 180 m² (D1), 300 m² (D2) ve 350 m² (D3 ve D4).
+
+İmkanların teknik özellikleri ve diğer avantajlar aşağıda özetlenmiştir:
+*   **Nitelikli Atölye Donanımı:** Üretim alanları **yüksek irtifalı**, vinç kurmaya elverişli ve içerisine kamyon ile forklift girebilecek şekilde tasarlanmıştır.
+*   **Güçlü Altyapı:** Atölyelerde üretim yapan işletmelerin ihtiyaçlarını karşılayacak kapasitede **trifaze elektrik şebekesi**, doğalgaz hattı, su, kanalizasyon ve yüksek hızlı internet altyapısı mevcuttur.
+*   **Arazi ve İnşaat Alanı Tahsisi:** Kendi binasını yapmak isteyen kuruluşlara kiralama veya yap-işlet-devret yöntemiyle **arazi tahsisi** yapılabilmektedir.
+*   **Ücretsiz Ofis Ödülleri:** "Girişimci Rampası" veya "Investment for Founders" gibi programlar kapsamında düzenlenen yarışmalarda başarı gösteren girişimcilere **3, 6 veya 12 aylık ücretsiz ofis desteği** verilmektedir.
+*   **Başvuru ve Sözleşme:** Ofis veya atölye kiralamak isteyen firmalar `innopark.online` portalı üzerinden başvuru yaparlar; projeleri 3 kişilik bir hakem heyeti tarafından değerlendirildikten sonra uygun bulunanlarla sözleşme imzalanır.
