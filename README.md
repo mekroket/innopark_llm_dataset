@@ -1,110 +1,57 @@
-# 🚀 InnoPark AI Assistant (NotebookLM Powered)
+# InnoPark AI Assistant 🚀
 
-InnoPark içerisindeki dağınık bilgi kaynaklarını tek bir yapay zeka sistemi altında toplayarak, kullanıcıların doğal dil ile soru sorup anında cevap almasını sağlayan bir AI asistan projesidir.
+InnoPark AI Assistant, InnoPark kurumsal bilgi kaynakları (yönetim standartları, girişimci destekleri, vb.) üzerinde çalışan, NotebookLM destekli yapay zeka sohbet asistanıdır.
 
----
+## 🌟 Özellikler
 
-## 📌 Proje Hakkında
+- **Gelişmiş Chat Arayüzü**: Modern, duyarlı ve Tailwind CSS ile güçlendirilmiş "glassmorphism" tasarım.
+- **NotebookLM Entegrasyonu**: Google'ın NotebookLM altyapısını kullanarak doğrudan InnoPark veri tabanından en doğru yanıtları verir.
+- **Sohbet Geçmişi**: LocalStorage kullanılarak sohbet geçmişiniz tarayıcınızda güvenle saklanır. Geçmiş sohbetlerinize kolayca dönebilirsiniz.
+- **Performanslı Önbellekleme (Cache)**: Sık sorulan sorular için dosya tabanlı bir önbellekleme sistemi kullanır, böylece API limitlerine takılmadan anında cevaplar alırsınız.
+- **Akıllı Oturum Yönetimi**: NotebookLM oturumunuzun süresi dolduğunda, asistan bunu algılar ve tek tıklamayla (arka planda `nlm login` tetikleyerek) yeniden oturum açmanızı sağlar.
+- **Typewriter (Daktilo) Efekti**: Yanıtlar, tıpkı ChatGPT gibi akıcı ve doğal bir şekilde ekrana yazdırılır.
+- **Markdown Desteği**: Yanıtlar gelişmiş markdown biçimlendirmeleri (kalın, italik, liste, kod blokları vb.) içerir.
 
-Bu proje, InnoPark ekosistemindeki bilgileri merkezileştirmek amacıyla geliştirilmiştir. **NotebookLM** kullanılarak doküman tabanlı bir bilgi sistemi oluşturulmuş ve RAG (Retrieval-Augmented Generation) yaklaşımı benimsenmiştir.
+## 🛠️ Kullanılan Teknolojiler
 
-## 🎯 Amaç
+- **Backend**: PHP 7.4+
+- **Frontend**: HTML5, Vanilla JavaScript, Tailwind CSS, Animate.css, Marked.js
+- **Yapay Zeka**: NotebookLM (Google) & NLM CLI
+- **Veritabanı**: Dosya tabanlı (Cache) & LocalStorage (Sohbet geçmişi)
 
-InnoPark ile ilgili dağınık haldeki verileri:
-*   📅 **Etkinlikler**
-*   🚀 **Girişimcilik Destekleri**
-*   📝 **Başvuru Süreçleri**
-*   📚 **Eğitim İçerikleri**
+## 📁 Proje Yapısı
 
-👉 **Tek bir platformda toplayarak**, kullanıcıların sorularına doğru, hızlı ve bağlamsal cevaplar veren akıllı bir sistem oluşturmak.
+```
+/
+├── index.php           # Ana sohbet arayüzü
+├── api.php             # Backend API (NotebookLM ile iletişim & Caching)
+├── cache/              # Önbelleğe alınmış soru-cevap dosyaları
+├── README.md           # Proje dokümantasyonu
+```
 
----
+## 🚀 Kurulum & Çalıştırma
 
-## 🧠 Sistem Mantığı
+1. **Gereksinimler:**
+   - PHP destekli bir web sunucusu (Örn: XAMPP, WAMP).
+   - [NotebookLM CLI (`nlm`)](https://github.com/notebooklm/nlm-cli) sisteminizde yüklü ve yapılandırılmış olmalıdır.
+   - PHP üzerinden `shell_exec` ve `popen` fonksiyonlarının aktif (engellenmemiş) olması gerekmektedir.
 
-Proje, doküman tabanlı bir **RAG (Retrieval-Augmented Generation)** mimarisi üzerine kuruludur:
+2. **Kurulum:**
+   Projeyi sunucunuzun (örn: `c:\wamp64\www\`) ilgili dizinine kopyalayın.
 
-1.  **Veri Toplama:** Çeşitli kaynaklardan ham veriler toplanır.
-2.  **Yükleme:** Veriler NotebookLM sistemine entegre edilir.
-3.  **Anlamlandırma:** Yapay zeka, içerikleri analiz ederek bir bilgi grafiği oluşturur.
-4.  **Yanıt Üretimi:** Kullanıcı soruları, bu bilgi tabanı üzerinden bağlamsal olarak cevaplanır.
+3. **Kullanım:**
+   Tarayıcınızdan projeye gidin (Örn: `http://localhost/innopark-llm/`).
+   Karşınıza çıkacak arayüz üzerinden sorularınızı sorabilirsiniz.
+   *Eğer "Oturum Süresi Doldu" hatası alırsanız, ekrandaki "Şimdi Giriş Yap" butonuna tıklayarak Chrome üzerinden yetki verebilirsiniz.*
 
----
+## 📌 Hızlı Sorgular
 
-## 📂 Veri Kaynakları
+Asistan üzerinde yer alan hızlı sorgu butonları ile InnoPark hakkında merak edilen konulara anında ulaşabilirsiniz:
+- Ekip Üyeleri
+- Firmalar
+- Girişimci Desteği
+- Standartlar
 
-Sistemin beslendiği temel veri türleri şunlardır:
+## 📝 Lisans
 
-*   🌐 **Web Sitesi İçerikleri:** Kurumsal duyurular ve genel bilgiler.
-*   📄 **PDF Dokümanlar:** Yönetmelikler, rehberler ve formlar.
-*   📝 **Eğitim İçerikleri:** Workshop ve seminer notları.
-*   📊 **Süreç Bilgileri:** Başvuru kriterleri ve operasyonel akışlar.
-
-> [!NOTE]
-> Tüm veriler, sistemin maksimum doğrulukla çalışması için önceden kategorize edilmiştir.
-
----
-
-## ⚙️ Özellikler
-
-*   🔍 **Doğal Dil İşleme:** Karmaşık soruları anlama yeteneği.
-*   📚 **Doküman Bazlı Yanıtlar:** Sadece verilen kaynaklara dayalı güvenilir bilgi.
-*   🧩 **Yapılandırılmış Bilgi:** Kategorize edilmiş veri mimarisi.
-*   ⚡ **Hızlı Erişim:** Anlık ve bağlamsal geri bildirim.
-*   🧠 **Bilgi Keşfi:** Veriler arasındaki gizli ilişkileri ortaya çıkarma.
-
----
-
-## 💻 Kullanılan Teknolojiler
-
-| Teknoloji | Kullanım Amacı |
-| :--- | :--- |
-| **NotebookLM** | Ana AI Motoru & RAG Altyapısı |
-| **HTML / CSS / JS** | Kullanıcı Arayüzü (Opsiyonel) |
-| **Markdown** | Dokümantasyon & Veri Yapılandırma |
-
----
-
-## 🧪 Örnek Kullanım Senaryoları
-
-Sistem, aşağıdaki gibi sorulara anında yanıt verebilir:
-
-> 💬 *"InnoPark’a nasıl başvurabilirim?"*
-> 
-> 💬 *"Son düzenlenen etkinlikler nelerdir?"*
-> 
-> 💬 *"Girişimcilere ne gibi destekler sağlanıyor?"*
-> 
-> 💬 *"Mentorluk süreci nasıl işliyor?"*
-
----
-
-## 📦 Proje Çıktıları
-
-- [x] Çalışan AI destekli sistem.
-- [x] Test edilmiş soru-cevap senaryoları.
-- [x] Düzenlenmiş ve temizlenmiş veri seti.
-- [x] İlerisi için geliştirme yol haritası.
-
----
-
-## 🚀 Gelecek Geliştirmeler
-
-*   🔌 **API Entegrasyonu:** Diğer platformlarla veri alışverişi.
-*   🎨 **Gelişmiş Arayüz:** Modern bir Chat UI tasarımı.
-*   📱 **Mobil Uyumluluk:** Her yerden erişim.
-*   🌍 **Çoklu Dil Desteği:** Global kullanıcılar için genişleme.
-*   🔄 **Real-time Güncelleme:** Verilerin anlık senkronizasyonu.
-
----
-
-## 🤝 Katkı Sağlama
-
-Bu proje, gerçek bir problemi çözmeye odaklanan açık bir öğrenme sürecidir. Her türlü katkıya ve geliştirmeye açıktır.
-
-## 📬 İletişim
-
-Geri bildirimleriniz bizim için değerlidir. Öneri ve sorularınız için iletişime geçebilirsiniz.
-
----
-*Developed with ❤️ for InnoPark Ecosystem*
+Bu proje InnoPark kullanımına özel olarak geliştirilmiştir.

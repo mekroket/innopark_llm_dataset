@@ -6,6 +6,16 @@ header('Access-Control-Allow-Headers: Content-Type');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $input = json_decode(file_get_contents('php://input'), true);
+    
+    // UI üzerinden giriş tetikleme (Login Butonu)
+    $action = $input['action'] ?? '';
+    if ($action === 'login') {
+        // Windows'da arka planda nlm login komutunu asenkron olarak tetikler
+        pclose(popen("start /B C:\\Users\\asus\\.local\\bin\\nlm.EXE login", "r"));
+        echo json_encode(['success' => true, 'message' => 'Giriş ekranı tetiklendi. Lütfen açılan Chrome penceresinde onay verin.']);
+        exit;
+    }
+
     $query = $input['query'] ?? '';
 
     if (empty($query)) {
@@ -38,6 +48,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $command = "set USERPROFILE=C:\\Users\\asus&& C:\\Users\\asus\\.local\\bin\\nlm.EXE query notebook $notebook_id $clean_query 2>&1";
     
     $output = shell_exec($command);
+    
+    // Oturum (Auth) hatasını yakala
+    if ($output !== null && (strpos($output, 'Authentication expired') !== false || strpos($output, 'Profile \'default\' not found') !== false || strpos($output, 'Run \'nlm login\'') !== false)) {
+        echo json_encode(['error' => 'Oturum süresi doldu.', 'auth_required' => true]);
+        exit;
+    }
     
     if ($output === null) {
         echo json_encode(['error' => 'Komut çalıştırılamadı.']);
